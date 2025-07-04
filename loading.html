@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Loading...</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #1f1d1d;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .loader-container {
+      position: relative;
+      width: 150px;
+      height: 150px;
+    }
+
+    .logo {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 2;
+    }
+
+    .circle-loader {
+      width: 150px;
+      height: 150px;
+      border: 6px solid transparent;
+      border-top: 6px solid red;
+      border-right: 6px solid orange;
+      border-radius: 50%;
+      animation: spin 1.2s linear infinite;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="loader-container">
+    <img src="logo.png" alt="Logo" class="logo" />
+    <div class="circle-loader"></div>
+  </div>
+
+  <script>
+    // Redirect to your main page after 2 seconds
+    setTimeout(() => {
+      window.location.href = "index.html"; // Replace with your actual homepage
+    }, 2000);
+  </script>
+</body>
+</html>

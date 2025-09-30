@@ -148,8 +148,8 @@ if (certContainer && certTrack && certDotContainer) {
   const roles = [
     "Computer Engineering graduate",
     "Programmer",
-    "Developer",
-    "Web Designer"
+    "Wev Developer",
+    "Aspiring Software Engineer"
   ];
 
   let roleIndex = 0;
@@ -458,4 +458,5 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelectorAll('.cert-slide').forEach(s => s.classList.remove('selected'));
     slide.classList.add('selected');
   });
+
 });

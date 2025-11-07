@@ -9,6 +9,7 @@ body {
   background-color: #1a1a1a;
   font-family: Arial, sans-serif;
   color: white;
+  
 }
 
 /* Header */
@@ -1830,3 +1831,16 @@ html {
   opacity: 1;
   transform: scale(1);
 }
+
+
+@media (max-width: 768px) {
+  html, body {
+    overflow-x: hidden; /* stop horizontal scroll */
+  }
+
+  * {
+    max-width: 100%; /* prevent elements from overflowing */
+    box-sizing: border-box;
+  }
+}
+
